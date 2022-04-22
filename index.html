@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dojonary</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="top">
+      <div class="nav">
+        <h1 class="nav-title">Dojonary</h1>
+        <ul class="nav-links">
+          <li><input type="text" value="Search" /></li>
+          <li><button class="btn" onclick="Logout(this)">Login</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <!-- left column -->
+        <div class="col-2">
+          <div class="user-card">
+            <div class="card-body">
+              <div class="card-body-left">
+                <h1>ninja</h1>
+                <h3>noun</h3>
+                <p>Plural: ninjas</p>
+                <button class="btn" onclick="alertThis(this)">13 Likes</button>
+              </div>
+              <div class="card-body-right">
+                <p>
+                  A practitioner skilled in the <br />
+                  <a href="#">Japanese</a> art of <a href="#">ninjutsu</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="user-card">
+            <div class="card-body">
+              <div class="card-body-left">
+                <h1>ninja</h1>
+                <h3>noun</h3>
+                <p>Plural: ninjas</p>
+                <button class="btn">37 likes</button>
+              </div>
+              <div class="card-body-right">
+                <p>
+                  A <a href="#">Programmer</a> who breaks <br />down problems
+                  with <a href="#">zen</a>-like <br />focus
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- right column -->
+        <div class="col">
+          <div class="card">
+            <p>Dojonary is <br />defined by <b>YOU</b></p>
+            <button class="btn" id="green" onclick="removeBtn(this)">
+              Add Definition
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
